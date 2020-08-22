@@ -1,0 +1,27 @@
+
+     <h5>Search Bollywood Movie by Year</h5>
+    <div class="row">
+        <div class="col-12">
+            <div class="input-group">
+                <input class="form-control border-secondary py-2" type="search" ng-model='id' value="search">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" ng-click="gotoMovieId(id)">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div align="center">
+    <div class="row">
+    	<div class="col-sm-12 col-md-12"><h3>{{movie.original_title}}</h3> {{movie.overview}}<br><br><br>
+
+        <iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/hz09B-Ur-So?autoplay=1&origin=http://example.com"
+  frameborder="0"></iframe>
+
+        </div>
+    </div>
+
+   </div>

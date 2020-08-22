@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+<form name='example' action="" method='get' onsubmit="return validation()">
+username : <input type='text' id='name' value='' ><span id='username' style='color:red;' ></span><br><br>
+password : <input type='password' id='passw' value='' ><span id='password'  style='color:red;'></span><br><br>
+<input type='submit' value='submit'>
+</form>
+<script>
+function validation(){
+	var un=document.getElementById('name').value;
+	var ps=document.getElementById('passw').value;
+	var unlen=un.length;
+	var pslen=ps.length;
+	if (un=='')
+		{
+		document.getElementById('username').innerHTML=" please fill valid username";
+		return false;
+		}
+	if (unlen !=12)
+		{
+		document.getElementById('username').innerHTML=" must be 12 characters username";
+		return false;
+		}
+	if (ps=='')
+		{
+		document.getElementById('password').innerHTML=" please fill valid password";
+		return false;
+		}
+	if (pslen !=8)
+		{
+		document.getElementById('password').innerHTML=" must be 8 characters password";
+		return false;
+		}
+	}
+</script>
+</body>
+</html>

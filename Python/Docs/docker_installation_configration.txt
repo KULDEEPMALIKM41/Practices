@@ -1,0 +1,36 @@
+TERMINAL - 1
+1. sudo apt install docker.io
+2. docker --version
+3. sudo docker ps
+4. sudo docker images
+5. sudo docker pull ubuntu
+6. sudo docker images
+7. sudo docker run -ti ubuntu bash
+8. clear
+9. whoami
+10. apt update
+
+TERMINAL - 2
+11. sudo apt install nginx
+
+TERMINAL - 1
+12. apt install nginx
+
+TERMINAL - 3
+13. sudo docker ps
+14. sudo docker ps -a
+
+TERMINAL - 1
+15. service nginx start
+
+TERMINAL - 3
+16. sudo docker commit <container_ID> <image_nm>-nginx
+17. sudo docker stop <container_ID>
+18. sudo docker ps
+19. sudo docker ps -a
+20. sudo docker run -ti -p 8080:80 <image_nm>-nginx bash
+21. service nginx start
+22. /var/www/html# apt install nano
+23. /var/www/html# nano index.nginx-debian.html
+24. /var/www/html# exit
+

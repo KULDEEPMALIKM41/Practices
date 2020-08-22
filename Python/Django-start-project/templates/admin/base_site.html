@@ -1,0 +1,12 @@
+{% extends "admin/base.html" %}
+{% comment %}
+find Django path using this command - "python -c "import django; print(django.__path__)"
+Copy from path - "E:\study\VSCODE\mysite\venv\Lib\site-packages\django\contrib\admin\templates\admin\base_site.html"
+{% endcomment %}
+{% block title %}{{ title }} | Polls site admin{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Polls Administration</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

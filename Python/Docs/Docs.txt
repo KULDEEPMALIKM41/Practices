@@ -1,0 +1,603 @@
+*software => software as an interface which is use to connect user and service 
+	       provider.
+
+
+*web application => 
+           front end --> it is application level UI by which user will intrect. created with
+		the help of client site script . these script are execute on
+		 browser.
+		eg:- HTML, CSS, javaScript etc.
+
+          back end --> it is application level permanent storage capable to store data.
+		implemented in web application with the help of server site
+		script. these script which are execute on server(software).
+
+*python => python is multipurpse interpriter (semi-interpriter) base script use for
+	 various types of app development along with as a support to various
+	  other technology.
+
+	development - console base ,web base, decktop base app develop.
+
+	support - machine learning, architect intelligence, data analytics. 
+
+
+--> guido van rossum (invented)
+
+--> 1985 - 1990 (python 1.0)
+
+--> 2000  (python 2.0)  2.7.15 leatest version
+
+--> 2008  (python 3.0)  3.6.5 leatest version
+
+
+* step to install leatest python3 version in ubuntu os =>
+	step 1 . download the leatest version of python setup from python.org.
+	step 2 . extract download zip and save desktop.
+	step 3 . move to python setup from console.
+	 command - 1.	cd desktop/
+		   2.	cd python-3.5.6/
+		  3.	./configure
+		 4.	make
+		5.	clear
+	                  6.	sudo make install
+
+* basic programming concept => 
+
+		a) step to create first program in python -->
+
+                 step 1 . move to home folder (root path) and create a folder by any name.
+                 step 2 . create a file with extention .pyny any name.
+                 step 3 . open with text editer and write program.
+                
+
+		b) step of execution python program -->
+
+               step 1 . move to current python file location to be executed from console.
+               step 2 . execute the file.
+
+		cd pythonbatch12/
+		cd 11june/
+		python3 demo.py (execute program)
+
+
+*oldest oop programming language is "smalltalk"
+
+*Python web programming with help of CGI =>
+
+  Python on it's core programming level is capable to generate GUI tools
+	along with is capable to generate web base application by using CGI
+	(Comman Getway Interface) .
+
+Software Packages => 
+			1.  WAMP Server
+				W - Windows Os
+				A - Apache Server
+				M - My SQL Database
+				P - PHP Script
+
+			2. XAMP Server
+				X - X Os (Ubuntu , Windows)
+				A - Apache Server
+				M - My SQL Database
+				P - PHP Script
+			3. LAMP Server
+				L - Linux Os
+				A - Apache Server
+				M - My SQL Database
+				P - PHP Script
+			4. MAMP Server
+				M - Mac Os
+				A - Apache Server
+				M - My SQL Database
+				P - PHP Script
+
+CGI => it stannd for Comman Getway Interface. it is an configuration setting which
+             is to be done on an server so that an server must be capable to execute a
+            additional script for which it is not generated.
+
+CGI Configuration Ubuntu =>
+               Step 1 -> Move to server root directory of apache and write the following
+		configuration in configuration file.
+
+	            file-->computer-->etc-->apache2-->site-enable-->000default.com
+
+	Configuration between this two line =>
+	uper line -> DocumentRoot /var/www/html
+	configuration -> ScriptAlias /cgi-bin/ /var/www/html/kuldeep/projects/
+	          	            <Directory "/var/www/html/kuldeep/projects">
+	                               Options +ExecCGI
+	                               AddHandler cgi-script .cgi .py
+	                               </Directory>
+	lower line -> #Available loglevels: trace8, . . . , trace1,
+
+
+              Step 2 -> save the configuration file and restart apache server.
+		NOTE:- if necessary enable cgi on server.
+
+		Command:- 1. sudo a2enmod cgi
+			   2. sudo service apache2 restart
+
+Create python CGI program and its execution =>
+            Step 1 -> move to files-->computer-->var-->www-->html
+
+            Step 2 -> create folder which name give in cgi configuration.
+		 html-->kuldeep-->projects
+
+            Step 3-> in this folder create .py file.
+		html-->kuldeep-->projects -->demo.py
+
+           Step 4-> in this .py file write following header line.
+	python root path->	#!/usr/bin/python3.5
+			print("Content-type:text/html")
+			print("")
+
+          Step 5-> provide permission to cgi configure file.
+             command--> sudo chmod 777 -R /var/www/html/kuldeep/projects/demo.py
+
+
+
+CGI Configuration Windows =>
+               Step 1 -> instal WAMP Server on windows os.
+
+               Step 2 -> Move to server root directory of apache and write the following
+		configuration in configuration file.
+
+	            C: -->wamp -->bin -->apache -->Apache2.2.11 -->conf -->httpd.conf
+
+	Configuration between this two line =>
+	uper line -> # for more information.
+		   #
+	configuration -> Options Indexes FollowSymLinks +ExecCGI
+	lower line -> #
+		     #AllowOverride controls what directives may be placed in.
+			
+				and
+
+           uper line -> # (You will also need to add "ExecCGI" to the "Options" directive.)
+  	              #
+           Configuration ->  AddHandler cgi-script .cgi .py
+
+           Lower line ->  # For type maps (negotiated resources):
+
+           Step 2 -> go to taskbar and right click on wamp icon and click Exit
+	         than restart WAMP do click on WAMP desktop icon.
+
+Create python CGI program and its execution =>
+            Step 1 -> move to C: -->wamp-->www
+
+            Step 2 -> create folder which name give in cgi configuration.
+		 www -->kuldeep-->projects
+
+            Step 3-> in this folder create .py file.
+		 www -->kuldeep-->projects-->demo.py
+
+           Step 4-> in this .py file write following header line.
+#!C:/Users/LENOVO/AppData/Local/Programs/Python/Python36-32/python.exe
+print("Content-type:text/html")
+print("")
+
+
+*Form Tage =>
+	it is an tag use to take user input in case of web application.it have two
+	attributes which are use to manage contain.
+
+Methods of form tage => form tage bulk amount of data in input and method
+		spacify the management of data.
+
+	1. Get -> a) the data by 'get' will be send in url.
+	                b) less secure.
+	                c) take 1500 character approximately.
+	                d) it is faster.
+	                e) it is use by default.
+	2.post -> a) it manage the data by using http.
+	                 b)  secure.
+	                 c) Unlimited data send.
+	                 d) it is slower.
+	                 e) it is not use by default.
+
+
+*Database => it is application level permanent storage capable to store bulk
+	       amount of data simultaniously in structured or unstructuured 
+	        menner.
+
+My SQL =>it is an database to capable to store bulk amount of record in structure
+	format following a scema managment system.
+
+SQL => Two way for access to my sql , CUI(Command User Interface) and 
+              GUI(Graphical User Interface)
+
+             Three part of sql -->
+                1.DDL(Data Definition Language) -->Manage Data Structure By Using 
+				Scama.
+				eg:- Table's row and column.
+				Operations:- Create ,Alter ,Drop
+
+               2.DML(Data Manuplation Language) -->Work on Data.
+				           Operations --> CRUD operation
+						C - Create - insert
+						R - Read - select
+						U - Update 
+						D - Delete
+
+              3. DCL(Data Control Language --> For grant permission.(For DBA)
+				Operations :- Grant , Invoke ,Revoke
+
+CUI for Ubantu =>  go to console and type -> mysql -uroot -p
+				        ->   root
+					'or'
+				       mysql -uroot -proot
+
+CUI for Window => go to taskbar and click on WAPM icon than click on MySQL 
+		and open mysql console.
+
+
+Commands for MySQL => DDL command:- 1) create database command
+
+a). command for access data bases in  mysql.
+       => show databases;
+
+b). command for create over all data base in my sql.
+       => create database database_name;
+
+c). command to use particuler database in my sql.
+       => use database_name;
+
+d). commant to create an table in database.
+       =>create table table_name(
+			-> field1_nm field1_type field1_constrain, 
+			-> field2_nm field2_type field2_constrain,
+			-> field3_nm field3_type field3_constrain);
+
+	eg:-  	create table student(
+ 		    -> Roll_No int,
+  		    -> name varchar(100),
+ 		    -> Physics int,
+		    -> Chemistry int,
+		    -> Maths int,
+		    -> Hindi int,
+		    -> English int);
+
+e). command for show table name in storage.
+	=> show tables;
+
+f). command for the structure the table.
+	=> desc table_name;
+	
+2. Alter database command --> This query is use to update the schema
+								of existing table.
+
+a). add clause
+		=> alter table table_name add new_field_nm field_type;
+			eg:- alter table data add total int;
+
+		=> alter table table_name add new_field_nm field_type after existing_colomn_nm;
+			eg:- alter table data add total int after nm;
+			
+		(than in DML command:- update data set total=phy+cha+mat;)
+		
+		=> alter table table_name add new_field_nm field_type;
+			eg:- alter table data add per float;
+			
+		(than in DML command:- update data set per=total/3;)
+		
+b). change clause:-
+			=> alter table table_name change old_field_nm to new_field_nm field type;
+			eg:- alter table data change e_address to location varchar();
+			
+c). modify clause:- 
+			=> alter table table_name modify field_nm field type;
+			eg:- alter table data modify total float;
+			
+
+			
+d). drop clause:- 
+			=> alter table table_nm drop field_nm;
+			eg:-  alter table data drop per;		(delete field)
+			
+3. rename command:- 
+			=> rename table old_table_nm to new_table_nm;
+			eg:- rename table data to employee;
+			
+4. truncate command:- 
+			=> truncate table_name;
+			eg:- truncate data; (delete table's data with cache and use new
+									memory for new operation )
+			
+5. drop command:-delete for table & database.
+			=> drop table table_nm;           (delete table's schema & his data)
+			eg:- drop table data;
+			
+			=> drop database database_nm;
+			eg:- drop database pythonbatch12;   (delete overall database)
+
+
+DML command:-  to manage the data  which are store on database.
+
+1. data insertion command.
+	a) Direct Insertion.
+		=> insert into table_name values(
+			-> 11,
+			-> 'kuldeep',
+			-> 70,
+			-> 80,
+			-> 90,
+			-> 60,
+			-> 50); 
+
+	b) Partial Insertion.
+	      =>  insert into table_name(Roll_No,name,Physics,Chemistry,Maths,
+	             Hindi,English) values(12, 'sandeep',90,60,50,70,80); 
+
+
+2. Selection  of record from the database.
+	=>select * from table_name;
+
+		=> eg:- select * from student;
+		=> eg:- select name,physics from student;
+		=> eg:- select * from student order by Roll_No asc;
+		=> eg:- select * from student order by Roll_No desc;
+
+	        clauses of this command :- 
+	               a) where clause -it is use to apply n condition in data fatching.
+
+		=>        eg:- select * from student  where Roll_No = 12;
+		=>        eg:- select * from student where name="kuldeeep";
+
+	               with operator:- 
+			AND :- it is use to select record simultanously by
+			             cheaking multiple condition in a single row.
+
+              =>            eg:- select * from student where Roll_no=11 && name="kuldeep";
+
+			OR :- it is use to select record simultanously by
+			            cheaking multiple condition in a multiple row.
+
+              =>            eg:- select * from student where Roll_no=11 || name="sandeep";
+
+	               so on >, <, >=, <=, != etc operator used.
+
+ 	=>               eg:- select * from student where  physics >=80 ;
+	=>               eg:- select * from student where English <=60;
+
+
+	             b) LIKE clause :- it is use to apply pattern matching in case of 
+			       data selection.
+
+	=>	eg:- select * from student where name like 'k%';
+	=>	eg:- select * from student where name like '%p';
+	=>	eg:- select * from student where name like '%l%';
+	=>	eg:- select * from student where name like '_a%';
+
+	          c) Between :- 
+
+	=>	eg:- select * from student where Roll_No between 11 and 13;
+		
+
+
+	         d) Limit :- starting(index no.),record to be fatch( no. of row)
+
+	=>	eg:- select * from student limit 1,4;
+
+3.command to delete all the record from data.
+	=>delete from student where Roll_No=12;
+	=>delete from student; ( delete table's data but cache is not clear 
+							and use old memory for new operation)
+4.command for update data.
+	=> update student set Chemistry=85 where Roll_No=12;
+	
+	
+	
+	
+* MySQL insertion in python =>
+					Note:- To perform any database related operation there is 
+							a database connectivity implementation.
+							
+ -> mymySQL connection in windows => step 1 -> mySql configured folder is drop
+									  on WAMP server where our project is 
+									  develop (pymysql).
+									
+ -> mymySQL connection in ubuntu => 
+				      step 1 -> command :- sudo apt-get install python3-pymysql
+					  
+ -> now same step => step 2 -> after installing the connector if installed 
+							successfully a module by name pymsql will enabled
+							in python which contain all the function for operation.
+
+* step to insert record in python and database =>
+
+step 1 - create an UI and take input data in python .
+step 2 - create database table to insert record.
+step 3 - create an database connection.
+step 4 - create an database query to insert record in database.
+step 5 - execute the query.
+						result=cursor.execute(query)
+						
+			this function is use to execute an query depending on the type of query.
+			the result of execution may vary.
+						
+		case 1 - in case of insert ,update and delete query this function return true
+					if query execute and false if not execute.
+					
+		case 2 - in case of select query this function is give total number of record
+					fetch by query execution.
+
+*API => a set of functions and procedures that allow the creation of applications
+		which access the application or other service. 
+		
+
+
+*state management in python => in case of web application their is prior require
+								of state management it all about to implement.
+								
+					1. the concept of user tracking.
+					2. the concept of application level security.
+					
+					in case of web based application this feature can be easily 
+					implement via two mechanism .
+					
+					1. on client site, it is cookies and
+					2. on server site, it is session.
+					
+python cookies => cookies is an storage capable to store the data on client site
+				  (browser end) can be use for state management in an application.
+
+	
+		module in python3 - HTTP.cookies
+		module in python2 - cookies
+		
+		
+		6 types of cookies in browser:-
+		
+		
+Sr. No			cookies					 				default values
+	_________________________________________________________________________
+	
+1.		mycookies['cname']=value							Null
+		
+2.	mycookies['cname']['expire']=sec.				till browser session
+		
+3.	mycookies['cname']['path']= __/__					default path
+		
+4.	mycookies['cname']['domain']=___					default domain
+		
+5.	mycookies['cname']['security']= 0,1						0
+
+
+
+
+
+*Gateway => a device used to connect two different networks, especially 
+			a connection to the Internet.
+			(two different bank connect when a transaction)
+		
+
+
+for django setup:-
+Linux:---------
+1.Open Terminal
+2.pip -h
+3.pip install virtualenv
+4.virtualenv DajangoProject
+5.source DajangoProject/bin/activate
+6.deactivate(if you want to deactivate)
+
+
+
+Windows:-------
+1.Open CMD
+2.pip -h
+3.pip install virtualenv
+4.virtualenv DajangoProject
+5.cd DajangoProject
+6.Scripts\activate
+7.deactivate(if you want to deactivate)
+django-admin startproject textutils
+cd textutils
+python manage.py runserver
+for create app :- python manage.py startapp
+for store migration :- python manage.py makemigrations
+for apply migration :- python manage.py migrate
+for create superuser :- python manage.py createsuperuser
+for change password :- python manage.py changepassword kuldeep
+for test models :- python manage.py shell
+
+
+
+How to make server windows PC:-
+1. download WAMP server 3.0.6
+2. go to browser and type "localhost"
+3. if server is working condition then open"httpd-vhosts.conf" file and replace to "Require local" from "Require all granted".
+4. save this file and restart all service and enable put online option.
+5. turn off private firewall.
+6. download fwd(https://play.google.com/store/apps/details?id=com.elixsr.portforwarder&hl=en) app from play store in mobile phone
+7. open app and add new rule: Rule title - Server 1
+							  Protocol - Both Or TCP
+							  From - rmnet0 port - 80(local server port)
+							  Target - 192.168.42.192(type "ipconfig" in cmd then get local IPv6 Address) port - 5555(grater then 1024)
+8. save & start forwording...
+9.  NOW goto SETTINGS--> About Phone--> Status 
+            note down ur IP Address.
+10.Type the IP Address seen in mobile followed by port number in ur browser or any other PC or Laptop or anyother mobile which is connected to internet.
+							  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+*Git Command*
+1. check version :-  git --version
+2. check Repo. status:- git status
+3. make git repo. :- git init
+4. Author info :- a) git config --global user.name "Kuldeep Mali"
+	       b) git config --global user.email "Kuldeepmalikm41@gmail.com"
+5. changes save in staging aria :- git add . or git add <name of file>
+6. changes commit :- git commit -m "comment  for hint"
+7. view changes :- git log
+8. add origin :- git remote add origin git@github.com:KULDEEPMALIKM41/First-Repo.git
+-------------*--------------*----------------*---------------*------------------*-------------------*--------------------*----------
+*Generating a new SSH key for connecting "Git" and "Github" *
+1. Open Git Bash.
+2. Paste the text below, substituting in your GitHub email address.
+	--> ssh-keygen -t rsa -b 4096 -C "kuldeepmalikm41@gmail.com"
+
+*Adding your SSH key to the ssh-agent*
+1. start the ssh-agent in the background
+	--> eval $(ssh-agent -s)
+2. Add your SSH private key to the ssh-agent.
+	--> ssh-add ~/.ssh/id_rsa
+3. Copy ssh key using this command & Add the SSH key to your GitHub account.
+	--> clip < ~/.ssh/id_rsa.pub
+-------------*--------------*----------------*---------------*------------------*-------------------*--------------------*----------
+
+9. git push -u origin <branch-name>
+10. git pull origin master
+11. check diff in file :- git diff <file-name> (compare local file with stage file)
+12. check diff in file :- git diff --staged <file-name> (compare stage file with commit file)
+13. stage file reset :- git reset <file-name>
+14. local file reset :- git checkout <file-name>
+15. cloning project :- git clone <live_path>
+16. for ignore file and floder:- a. touch .gitignore
+			b. notepad .gitignore
+			c. if  you already have a file checked in, and you want to 				ignore it, run this command :- git rm --cached <filename> or git rm -r --cached <folderName>
+			d. add file and folder (search "gitignore file on google")
+17. check branch :- git branch
+18. create branch :- git branch <new-branch-name>
+19. switch branch :- git checkout <branch-name>
+20. merge with active branch :- git merge <branch-name>
+21. delete branch  from local :- git branch -d <branch-name>
+21. delete branch  from github:- git push origin --delete <branch-name>
+
+https://blog.pythonanywhere.com/87/
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Host Django website on wamp server*
+1. install WAMP sever.
+2.pip install mod_wsgi==4.5.20 (visual c++ 14.0 required)
+3. set "MOD_WSGI_APACHE_ROOTDIR=C:\wamp64\bin\apache\apache2.4.27" (if any error to install mod_wsgi)
+4. see this video - https://www.youtube.com/watch?v=F6-yJpPEpoE&t=312s
+
+*Host Django website on Ubuntu*
+1. see this video - https://www.youtube.com/watch?v=XNS9BgQ0dGI&list=PLu0W_9lII9ah7DDtYtflgwMwpT3xmjXY9&index=71
+
+*Host Flask website on Ubuntu*
+1. see this video - https://www.youtube.com/watch?v=ENseYglESfw&list=PLu0W_9lII9ahOwlLGfKljH86ni_muVoi7&index=6
+
+
+*python 2 and 3 make virtualenv*
+py -3 -m virtualenv venv
+py -2 -m virtualenv venv
+
+pip freeze > requirements.txt
+
+*install python 2 and 3 package*
+py -3 -m pip install package
+py -2  -m pip install package
+
+
+*Create Local Server Using Python*
+1. go to the folder that you want to make server.
+2. open terminal.
+3. command - "python -m http.server --bind=localhost"
+
+https://djangocentral.com/how-to-fix-fatal-peer-authentication-failed-for-user-postgres-error/
+
+
+pyinstaller.exe --icon=dairy.ico -F --noconsole sk_doodh_dairy.py

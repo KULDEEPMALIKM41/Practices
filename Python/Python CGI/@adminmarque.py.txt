@@ -1,0 +1,13 @@
+		<div class="header-three"><!-- header-three -->
+			<div class="container" style="height:60px; ">
+				
+				
+					<div class="marquee" style="margin-top:10px;"><a href="" style="color:white; font-size:30px; font-family:courier;"> HI KULDEEP , <span>WELCOME TO ADMIN PANEL </span> </a></div>
+					<script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+					<script>
+					  $('.marquee').marquee({ pauseOnHover: true });
+					</script>
+				
+			</div>
+		</div>
+	</div>

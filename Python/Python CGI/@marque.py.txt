@@ -1,0 +1,13 @@
+		<div class="header-three"><!-- header-three -->
+			<div class="container" style="height:40px; ">
+				
+				
+					<div class="marquee" style="margin-top:10px;"><a href="" style="color:white;"> New collections are available here...... <span>Get extra 10% off on everything | no extra taxes </span> <span> Try shipping pass free for 15 days with unlimited</span></a></div>
+					<script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+					<script>
+					  $('.marquee').marquee({ pauseOnHover: true });
+					</script>
+				
+			</div>
+		</div>
+	</div>

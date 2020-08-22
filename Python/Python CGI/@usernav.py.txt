@@ -1,0 +1,59 @@
+<body >
+
+<!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?5syzmStv852XOY0A0FM9JuAuCdPHpoYW";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
+	<!-- header -->
+	<div class="header">
+		<div class="header1"><!--header-one--> 
+			<div class="header1-left">
+				<p>Buy & Sell anything....</p>
+			</div>
+			<div class="header1-right">
+				<ul>
+
+
+					<li class="dropdown head-dpdn">
+						<a href="userhomepage.py" class="dropdown-toggle" > Home</a>
+					</li> 
+					
+					
+					<li class="dropdown head-dpdn">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> Post<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#" target="_blank">Add Post</a></li> 
+							<li><a href="#">Manage Post</a></li> 
+							
+						</ul> 
+					</li> 
+					
+					
+					<li class="dropdown head-dpdn">
+						<a href="#" class="dropdown-toggle">Manage profile</a>
+					</li> 
+					
+					<li class="dropdown head-dpdn">
+						<a href="#" class="dropdown-toggle">Feedback</a>
+					</li>
+					
+										<li class="dropdown head-dpdn">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> My Account<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="changepassuserpage.py">Change passward</a></li> 
+							<li><a href="loginpage.py">Signout</a></li> 
+							
+						</ul> 
+					</li>
+					
+					
+					
+				</ul>
+				</div>
+			<div class="clearfix"> </div> <!-- header-one -->
+		</div>

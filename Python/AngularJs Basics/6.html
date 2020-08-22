@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>6 ag js</title>
+<script src=js/angular.min.js> </script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl" >
+Enter Your First Name: <input type="text" ng-model="fnm"><br><br>
+Enter Your Last Name : <input type="text" ng-model="lnm"><br><br>
+Your Full Name : {{test()}}<br><br>
+Your subjects is : <ol><li ng-repeat="x in subject">{{x}}</li></ol>
+<script>
+
+var myApp=angular.module("myApp",[]);
+	myApp.controller("myCtrl",function($scope){
+	$scope.fnm="Kuldeep";
+	$scope.lnm="Mali";
+	$scope.subject=["maths","chemistry","physics"];
+	$scope.test=function(){
+				return $scope.fnm+" "+$scope.lnm;
+				};
+	});
+</script>
+
+</body>
+</html>

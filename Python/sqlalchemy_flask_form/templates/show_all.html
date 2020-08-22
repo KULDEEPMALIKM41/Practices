@@ -1,0 +1,26 @@
+ <table>
+         <thead>
+            <tr>
+               <th>id</th>
+               <th>Name</th>
+               <th>Genger</th>
+               <th>Address</th>
+               <th>email</th>
+               <th>Age</th>
+               <th>language</th>
+            </tr>
+         </thead>
+     <tbody>
+            {% for student in students %}
+               <tr>
+                  <td>{{ student.id }}</td>
+                  <td>{{ student.name }}</td>
+                  <td>{{ student.Genger }}</td>
+                  <td>{{ student.Address }}</td>
+                  <td>{{ student.email }}</td>
+                  <td>{{ student.Age }}</td>
+                  <td>{{ student.language }}</td>
+               </tr>
+            {% endfor %}
+ </tbody>
+ </table>

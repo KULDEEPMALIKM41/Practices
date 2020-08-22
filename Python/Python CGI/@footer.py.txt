@@ -1,0 +1,10 @@
+ <div id='footer'>
+		<h1 style="margin-top:30px;">All right reserved &copy;,2018 Python</h1>
+		<br>
+		<p>Design by Python</p>
+</div>
+		
+		
+		
+</body>
+</html>

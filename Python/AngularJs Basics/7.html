@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>7 ag js</title>
+<script src=js/angular.min.js> </script>
+</head>
+<body ng-app="myApp">
+Enter first Number:<input type="text" ng-model="fno"><br><br>
+Enter second Number:<input type="text" ng-model="sno"><br><br>
+{{Output+" "+add(fno,sno)}}
+<script>
+var myApp=angular.module("myApp",[]);
+	myApp.run(function($rootScope){
+	$rootScope.Output="Addtion is : ";
+	$rootScope.add=function(x,y){
+		return x+y;
+	};
+});
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+console.time('execution time');
+console.log('hello kuldeep');
+console.log(4+34);
+console.log(34);
+console.log(true);
+console.log([1,2,3,4,5]);
+console.log({name:'kuldeep',marks:100});
+console.assert(false, 'this is not valid');
+console.table({name:'kuldeep',marks:100});
+console.warn('this is warning.');
+console.error('this is error.');
+console.timeEnd('execution time');
+// console.clear();

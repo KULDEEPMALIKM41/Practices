@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chrset="UTF 8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body ng-app="sampleApp">
+<title>Find Movie</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+
+<div class="container">
+    <div class="ng-view"></div>
+</div>
+
+<script>
+    var sampleApp = angular.module('sampleApp',['ngRoute']);
+
+
+        sampleApp.controller('allMovie', function($http,$scope,$routeParams,$location) {
+            $scope.id=$routeParams.id;
+            $scope.gotoMovieId=function(id){
+
+            $location.path("/id/"+id);
+
+            };
+
+            var urlLink="https://api.themoviedb.org/3/movie/"+$scope.id+"?api_key=7d5eb2ffe9807b29a22b5ad7f1204d89";
+
+
+             $http.get(urlLink).then(function(data){
+
+
+            $scope.movie=data.data;
+            console.log($scope.movie);
+
+
+
+        });
+
+    });
+        sampleApp.config(['$routeProvider',function($routeProvider){
+            $routeProvider.
+            when("/id/:id",{
+                templateUrl : '../static/others/main.html',
+                controller:"allMovie"
+
+            })
+            .otherwise({redirectTo:"/id/550"
+            });
+     }]);
+
+</script>
+</body>
+</html>

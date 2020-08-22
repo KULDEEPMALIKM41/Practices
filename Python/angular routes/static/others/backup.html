@@ -1,0 +1,98 @@
+<div class="container">
+    <div class="ng-view">
+
+    </div>
+    <h5>Search Bollywood Movie by Year</h5>
+    <div class="row">
+        <div class="col-12">
+            <div class="input-group">
+                <input class="form-control border-secondary py-2" type="search" ng-model='movieyear' value="search">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="submit" ng-click="gotoMovieYear(movieyear)">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div align="center">
+    <div class="row">
+    	<div class="col-sm-3 col-md-3">a</div>
+    	<div class="col-sm-3 col-md-3">b</div>
+    	<div class="col-sm-3 col-md-3">c</div>
+    	<div class="col-sm-3 col-md-3">d</div>
+    </div>
+
+    <br>
+
+   <div class="row">
+    	<div class="col-sm-3 col-md-3">a</div>
+    	<div class="col-sm-3 col-md-3">b</div>
+    	<div class="col-sm-3 col-md-3">c</div>
+    	<div class="col-sm-3 col-md-3">d</div>
+   </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+
+<title>Find Movie</title>
+<head>
+<body ng-app="myApp"   style="background-color: lightblue;">
+<p><a href="#!/year/2018">Main</a></p>
+
+<a href="#!/id/123">Red</a>
+
+
+<div class="ng-view" ></div>
+
+
+<script>
+
+app=angular.module('myApp',['ngRoute']);
+
+app.config(function($routeProvider) {
+  $routeProvider
+  .when("/year/:year", {
+    templateUrl : "main.html"
+  })
+  .when("/id/:id", {
+    templateUrl : "single.html"
+
+  });
+});
+
+
+</script>
+</body>
+
+</html>

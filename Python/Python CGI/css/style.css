@@ -1,0 +1,434 @@
+
+body{
+	margin:0; 
+	font-family: 'Roboto Condensed', sans-serif;
+    background: linear-gradient(to right, #ffff00 0%, #00ffff 100%);}
+body a{ 
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	transition: 0.5s all;
+	text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;	  
+}
+p{
+	margin:0;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+body a:hover{
+	text-decoration:none;
+}
+/*-- header --*/
+.header1 {
+    background: #464646;
+    padding: 0.5em 2em;
+} 
+.header1-left {
+    float: left;
+}
+
+
+
+.header1-left p{
+	font-size:30px; 
+	color: skyblue; 
+	font-family:cursive; 
+	padding-bottom:6.5px;
+}
+	
+.header1-right {
+    float: right;
+	margin-right:20px;
+}
+
+
+.header1-right ul li.dropdown {
+    display: inline-block;
+   padding-right:40px;
+   padding-top:8px;
+	
+} 
+ul.dropdown-menu {
+    -moz-animation: fadeInUp .2s ease-in;
+    -webkit-animation: fadeInUp .2s ease-in; 
+    animation: fadeInUp .2s ease-in;
+	min-width: 120px; 
+    font-size: 1em;
+	top: 125%;
+	z-index: 99999;
+}
+
+.header1-right ul li a.dropdown-toggle {
+    font-size: 1.4em;
+    color: #f9f9f9;
+	outline:none;
+}
+.header1-right ul li a.dropdown-toggle:hover,li.dropdown.head-dpdn.open a.dropdown-toggle,.my-account a:hover,.my-account a:hover i.fa{
+    color: #fd776d;
+	text-decoration:none;
+} 
+
+
+.header1-right ul li .caret { 
+    margin-left: 6px; 
+}
+.dropdown-menu > li > a { 
+    color: #999; 
+}
+.dropdown-menu > li > a:hover {
+    color: #fff;
+    background: #3988d1;
+}
+/*-- //header --*/ 
+
+
+
+
+
+
+
+/*-- header-two --*/
+
+
+
+.header-search input[type="search"] { 
+    padding: 0.8em 5em 0.8em 1em; 
+	
+}
+
+ .header-cart { 
+    margin: 1.1em 0 0;
+}
+
+.header-logo {
+    float: left; 
+}
+.header-search {
+    float: left;
+    width: 40%;
+    text-align: center;
+    margin: 1.6em 5em;
+}
+.header-cart {
+    float: right;
+	margin: 1.3em 0;
+}  
+.header-logo h1{
+    font-size: 3em; 
+    font-weight: 900;
+}
+.header-logo h1 a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+.header-logo h1 a span{
+    font-family:cursive;
+    font-size: 4em;
+    color:#F44336;
+    vertical-align: sub;
+	margin-right: 7px;
+}
+ 
+
+.header-logo h6 {
+    font-size: 0.8em;
+    color: #000;
+    letter-spacing: 1px;
+    margin-top: -1em;
+}  
+.header-search form {
+    position: relative;
+}
+.header-search input[type="search"] {
+    width: 100%;
+    padding: 1em 5em 1em 1em;
+    font-size: 1em;
+    color: #999;
+    outline: none;
+    border: 1px solid #cccccc;
+    background: none;
+    -webkit-appearance: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+}
+.header-search input[type="search"]:focus {
+    border-color: #f44336;
+}
+.header-search .btn-default {
+    border: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 60px;
+    height: 50px;
+    outline: none;
+    box-shadow: none;
+    background: #f44336;
+    padding: 0;
+    border-radius: inherit;
+    -webkit-appearance: none;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    transition: .5s all;
+}
+.header-search i.fa {
+    font-size: 1em;
+    color: #fff;
+    padding: 3px;
+} 
+.header-cart h4 a {
+    color: #000;
+}
+/*-- cart-box --*/ 
+.cart {
+    margin-right: 2em;
+    padding-right: 2em;
+    border-right: 1px solid #6495ed;
+    float: left;
+} 
+.view-cart {
+    background: #0280e1;
+    border: none;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+    border-radius: 50%;
+    width: 60px;
+    height: 59px;
+    text-align: center;
+    outline: none;
+}
+.view-cart  i.fa {
+    font-size: 2em;
+    color: #ffffff;
+	vertical-align: middle;
+}
+/*-- //cart-box --*/
+.my-account {
+    float: right;
+    margin: 1.4em 0;
+} 
+
+/*-- //header-two --*/
+
+
+
+
+
+
+
+/*-- header-three --*/ 
+.header-three {
+    border-bottom: 1px solid #eaeaea; 
+    background: url(../images/bg.png)#08bce4 no-repeat;
+    background-size: cover; 
+	
+}
+
+
+
+.marquee {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1em;
+    overflow: hidden;
+}
+
+
+
+.marquee a span {
+    margin-left: 18em;
+}
+
+
+
+
+/*-- header-three --*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.focus-grid a {
+    color: #6495ed;
+    text-align: center;
+    padding: 2em 0;
+}
+
+ 
+.focus-grid a.wthree-btn.wthree1 {
+    color: #ff4500;
+}
+.focus-grid a.wthree-btn.wthree2 {
+    color: #00b300;
+}
+.focus-grid a.wthree-btn.wthree3 {
+    color: #E91E63;
+}
+.focus-grid a.wthree-btn.wthree4 {
+    color: #a94442;
+}
+.focus-grid a.wthree-btn.wthree5 {
+    color: #f15cf1;
+}
+
+
+
+
+
+
+
+.wthree-btn { 
+	position: relative;
+	display: block;
+	margin: 1em auto;
+	width: 100%; 
+	text-transform: uppercase;
+	overflow: hidden;
+	border: 1px solid; 
+} 
+
+
+
+
+
+
+.focus-image i.fa {
+    font-size: 3em; 
+}
+
+
+
+
+
+h4.clrchg {
+    font-size: 1.1em;
+    margin-top: 1em;
+} 
+
+
+
+
+
+
+.wthree-btn:after {
+	right: -20px;
+	-webkit-transform: translate(50%, -50%);
+}
+
+
+
+
+
+
+#footer {
+	width:95%;
+	margin: 40px 0px 120px 33.5px;
+	text-align: center;
+	color: #8C8B8B;
+	text-shadow: 0 1px 0 #FFFFFF;
+	border-top:0.5px solid gray;
+}
+
+#footer a {
+	color: #8C8B8B;
+}	
+.regi table
+{
+	
+	height:450px;
+	width:425px;
+}	
+
+.regi
+{
+	height:600px;
+	width:600px;
+	border:1px solid;
+	
+	margin-top:10px;
+}
+
+.log table
+{
+	height:100px;
+	width:425px;
+}
+
+.log
+{
+	height:225px;
+	width:600px;
+	border:1px solid;
+	
+	margin-top:10px;
+}
+
+
+.cng table
+{
+	height:220px;
+	width:425px;
+}
+
+.cng
+{
+	height:350px;
+	width:600px;
+	border:1px solid;
+	
+	margin-top:10px;
+}
+
+
+.adcat table
+{
+	height:175px;
+	width:550px;
+	margin-left:112px;
+}
+
+.adcat
+{
+	height:300px;
+	width:600px;
+	border:1px solid;
+	
+	margin-top:10px;
+}
+
+
+
+.adpost table
+{
+	
+	height:675px;
+	width:425px;
+}	
+
+.adpost
+{
+	height:800px;
+	width:600px;
+	border:1px solid;
+	
+	margin-top:10px;
+}

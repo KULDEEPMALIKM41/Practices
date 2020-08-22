@@ -1,0 +1,53 @@
+<body >
+
+	<!-- header -->
+	<div class="header">
+		<div class="header1"><!--header-one--> 
+			<div class="header1-left">
+				<p>Buy & Sell anything....</p>
+			</div>
+			<div class="header1-right">
+				<ul>
+
+
+					<li class="dropdown head-dpdn">
+						<a href="adminhomepage.py" class="dropdown-toggle" > Home</a>
+					</li> 
+					
+					
+					<li class="dropdown head-dpdn">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> Category<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="addcatadminpage.py" >Add Category</a></li> 
+							<li><a href="#">Manage Category</a></li>
+							<li><a href="adsubcatadminpage.py">Add Sub Category</a></li> 
+							<li><a href="#">Manage Sub Category</a></li>							
+							
+						</ul> 
+					</li> 
+					
+					
+					<li class="dropdown head-dpdn">
+						<a href="manageuseradminpage.py" class="dropdown-toggle">Manage Users</a>
+					</li> 
+					
+				<li class="dropdown head-dpdn">
+						<a href="managepostadminpage.py" class="dropdown-toggle">Manage Post</a>
+					</li> 
+					
+						<li class="dropdown head-dpdn">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> Kuldeep<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						<li><a href="https://dashboard.zopim.com/?lang=en-us#home" target="_blank">Reply User</a></li>
+							<li><a href="changepassadminpage.py">Change passward</a></li> 
+							<li><a href="loginpage.py">Signout</a></li> 
+							
+						</ul> 
+					</li>
+					
+					
+					
+				</ul>
+				</div>
+			<div class="clearfix"> </div> <!-- header-one -->
+		</div>

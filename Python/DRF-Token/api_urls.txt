@@ -1,0 +1,31 @@
+POST http://127.0.0.1:8000/api-token-auth/
+Body(form-data): username: vitor, password:vitor
+
+GET http://127.0.0.1:8000/product/ 'Authorization': Token 6b07509bf7be06c07c5c8f10cd99e850f13e0072
+
+POST http://127.0.0.1:8000/product/ 'Authorization': Token 6b07509bf7be06c07c5c8f10cd99e850f13e0072
+Body (row): {
+        "name": "kuldeep",
+        "discription": "this is over first product",
+        "price": "5250000.00"
+    }
+
+
+GET  http://127.0.0.1:8000/product/5/ 'Authorization': Token 6b07509bf7be06c07c5c8f10cd99e850f13e0072
+
+PUT http://127.0.0.1:8000/product/5/ 'Authorization': Token 6b07509bf7be06c07c5c8f10cd99e850f13e0072
+Body (JSON): {
+        "id": 5,
+        "created": "2020-08-11T14:25:55.579317Z",
+        "name": "kuldeep",
+        "discription": "this is over first product",
+        "price": "5250000.00"
+    }
+
+
+
+
+
+
+
+https://code.tutsplus.com/tutorials/how-to-authenticate-with-jwt-in-django--cms-30460#:~:text=Create%20a%20directory%20where%20you,to%20install%20the%20project%20dependencies.&text=Create%20a%20Django%20project.&text=Install%20DRF%20and%20django%2Drest%2Dframework%2Djwt%20using%20pip.&text=Let's%20go%20ahead%20and%20add,in%20the%20settings.py%20file.

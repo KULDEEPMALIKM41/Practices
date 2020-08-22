@@ -1,0 +1,51 @@
+<body >
+
+	<!-- header -->
+	<div class="header">
+		<div class="header1"><!--header-one-->
+			<div class="header1-left">
+				<p>Buy & Sell anything....</p>
+			</div>
+			<div class="header1-right">
+				<ul>
+
+
+					<li class="dropdown head-dpdn">
+						<a href="Homepage.py" class="dropdown-toggle" > Home</a>
+					</li>
+
+
+					<li class="dropdown head-dpdn">
+						<a href="aboutpage.py" class="dropdown-toggle" >About</a>
+					</li>
+
+
+					<li class="dropdown head-dpdn">
+						<a href="contactpage.py" class="dropdown-toggle">Contact</a>
+					</li>
+
+
+					<li class="dropdown head-dpdn">
+						<a href="servicepage.py" class="dropdown-toggle">Service</a>
+					</li>
+
+
+					<li class="dropdown head-dpdn">
+						<a href="helppage.py" class="dropdown-toggle">Help</a>
+					</li>
+
+										<li class="dropdown head-dpdn">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> My Account<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="loginpage.py" >Login </a></li>
+							<li><a href="Registrationpageotp.py" >Sign Up</a></li>
+							<li><a href="otpverifypage.py" >Verify Acount</a></li>
+
+						</ul>
+					</li>
+
+
+				</ul>
+				</div>
+			<div class="clearfix"> </div> <!-- header-one -->
+		</div>

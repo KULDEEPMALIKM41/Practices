@@ -1,0 +1,6 @@
+1. sudo apt-get install rabbitmq-server.
+2. sudo service rabbitmq-server restart.
+3. sudo rabbitmqctl status.
+4. sudo pip install celery.
+5. celery -A <celery_app_name> worker --loglevel=info.
+6. 

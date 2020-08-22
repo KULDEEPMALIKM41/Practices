@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>8 ag js</title>
+<script src=js/angular.min.js> </script>
+</head>
+<body ng-app="myApp">
+
+<kuleep-mali></kuleep-mali>
+<script>
+var myApp= angular.module("myApp",[]);
+	var content="<select>"
+		content+="<option>Red</option>"
+		content+="<option>Green</option>"
+		content+="<option>Blue</option>"
+		content+="<option>Black</option>"
+		content+="</select>"
+	myApp.directive("kuleepMali",function(){
+		return {
+		template : content
+				};
+		});
+</script>
+
+</body>
+
+
+</script>
+<body>
+</html>

@@ -1,0 +1,46 @@
+**Onclickbet data analysis module**
+
+Overview(section 1):-
+1. Total No. of placed bet
+2. Total Amount on placed bet
+3. Total Users on placed bet
+
+User anlysis(section 2):-
+user with Highest/Lowest no of placed bet
+user with Highest/Lowest placed amount
+
+Odd anlysis(section 3):-
+1. odd with Highest/Lowest No of users
+2. odd with Highest/Lowest placed amount
+3. odd Highest/Lowest No of placed time
+4. map all odds with user and amount
+
+Market anlysis(section 4):-
+1. market with Highest/Lowest No of users
+2. market with Highest/Lowest placed amount
+3. market Highest/Lowest No of placed time
+4. map all market with user and amount
+
+Match anlysis(section 5):-
+1. match with Highest/Lowest No of users
+2. match with Highest/Lowest placed amount
+3. match Highest/Lowest No of placed time
+4. map all match with user and amount
+
+League anlysis(section 6):-
+1. league with Highest/Lowest No of users
+2. league with Highest/Lowest placed amount
+3. league Highest/Lowest No of placed time
+4. map all league with user and amount
+
+Sport anlysis(section 7):-
+1. sport with Highest/Lowest No of users
+2. sport with Highest/Lowest placed amount
+3. sport Highest/Lowest No of placed time
+4. map all sport with user and amount
+
+interlink anlysis(section 8):-
+1. interlink all section.
+
+
+i will setup of django for creating APIs for this project and link this data analysis module to django.
